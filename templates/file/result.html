@@ -45,13 +45,12 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<h1>UPLOAD</h1>
-
+									<h1>UPLOAD - complete</h1>
 								</header>
 								{% if fail %}
 									파일 이름에 문제가 있습니다. 다른 이름으로 다시 시도해주세요(error_code : 0x01)
 								{% else %}
-									{{ filename }} (id : {{ _id }} )  가 업로드되었습니다.
+									{{ filename }} download url : sol-studio.kro.kr:4998/d/{{ _id }}
 								{% endif %}
 							</section>
 

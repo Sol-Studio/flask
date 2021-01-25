@@ -53,7 +53,7 @@ def read_data(_id):
     try:
         return _return[0][1]
 
-    except KeyError:
+    except IndexError:
         return True
 
 
@@ -104,7 +104,7 @@ def download():
 @app.route("/d/<file_id>")
 def get_profile(file_id):
     file = read_data(file_id)
-    if file:
+    if type(file) == bool:
         file = "잘못된 아이디입니다."
     return render_template("file/do.html", file=file)
 
