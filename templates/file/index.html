@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>File Share</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='assets/css/noscript.css') }}" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in" style="line-height: 200px;">
+
+				<!-- Intro -->
+					<div id="intro" style="vertical-align: middle">
+						<h1>This is<br />
+						Innovation</h1>
+						<p>
+							By Sol-Studio
+						</p>
+
+					</div>
+
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="/file" class="active">Home</a></li>
+							<li><a href="/upload">upload</a></li>
+							<li><a href="/d">download</a></li>
+						</ul>
+						<ul class="icons">
+							<!--<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>-->
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<!-- Featured Post -->
+							<article class="post featured" style="height: 450px;">
+								<header class="major">
+									<h2>File Share</h2>
+									<p style="height: 10%;">간단하게 파일을 공유하세요.</p>
+								</header>
+							</article>
+
+							<ul class="actions special">
+								<li><a href="/upload" class="button large" style="vertical-align: middle">UPLOAD YOUR FILE</a></li>
+							</ul>
+					</div>
+
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul>
+							<li>&copy; Sol-Studio 2021</li>
+							<li>Design: HTML5 UP</li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/jquery.scrollex.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/jquery.scrolly.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/browser.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/breakpoints.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+	</body>
+</html>
